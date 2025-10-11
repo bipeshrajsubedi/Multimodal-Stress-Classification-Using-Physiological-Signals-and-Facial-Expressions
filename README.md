@@ -1,22 +1,34 @@
-# Multimodal Stress Classification Using Physiological Signals and Facial Expressions with Deep and Machine Learning Models
-Stress Classification using WorkStress3D dataset
+# Multimodal Stress Classification Using Physiological Signals and Facial Expressions
 
-Dataset used: 
+This repository contains code and resources for **stress classification** using the **WorkStress3D dataset**, leveraging both physiological signals and facial expressions with deep and machine learning models.
 
-->Physiological Signals and Facial Expressions Data (2 classes)
+## Dataset
 
-link: https://data.mendeley.com/datasets/t93xcwm75r/8
+- **Data Types:** Physiological signals and facial expressions  
+- **Classes:** 
+  - `0` → Stress-free  
+  - `1` → Stressed  
+- **Link:** [WorkStress3D Dataset](https://data.mendeley.com/datasets/t93xcwm75r/8)
 
-Stress classes: 0 (stress-free) 1 (stressed)
+## Models
 
-Models:
+### Independent Models
+Different models are used depending on the data modality. These models are trained independently and **do not combine outputs**, unlike the fusion approach.  
 
-Independent-models: Here separate models are used for different data types. The output of models are not combined unlike fusion approach where these models output are ensembeled.
+- **Physiological Data:**  
+  - Long Short-Term Memory (LSTM)  
+  - Support Vector Machine (SVM)  
 
-  For Physiological Data: LSTM, SVM
+- **Facial Expressions Data:**  
+  - VGG16 (pre-trained CNN)  
+  - Custom CNN  
 
-  For Facial Expressions Data: VGG16, Basic CNN
+- **Paper Link:** *(add paper link here)*
 
-Fusion-approach:
-- Both LSTM and VGG16 outputs are combined to provide as inputs to the fusion layer.
-- The physiological and facial data are combined to train the fusion layers. Note that: LSTM and VGG16 are independently trained on physiological and facial data respectively at first. Only their predictions/features are used for training fusion layer.
+### Fusion Approach (Exploratory)  
+- **Procedure:**  
+  1. Train LSTM on physiological data and VGG16 on facial expression data independently.  
+  2. Extract predictions/features from both models.  
+  3. Combine these outputs to train a **fusion layer**.  
+
+> Note: The fusion layer uses only the outputs from the pre-trained LSTM and VGG16 models; the original data is not directly fed to the fusion model.  
