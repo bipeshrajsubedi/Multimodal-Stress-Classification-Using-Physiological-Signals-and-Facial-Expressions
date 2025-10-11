@@ -1,4 +1,4 @@
-# Stress-Analysis
+# Multimodal Stress Classification Using Physiological Signals and Facial Expressions with Deep and Machine Learning Models
 Stress Classification using WorkStress3D dataset
 
 Dataset used: 
