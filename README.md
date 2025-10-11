@@ -11,7 +11,7 @@ Stress classes: 0 (stress-free) 1 (stressed)
 
 Models:
 
-Independent-models:
+Independent-models: Here separate models are used for different data types. The output of models are not combined unlike fusion approach where these models output are ensembeled.
 
   For Physiological Data: LSTM, SVM
 
