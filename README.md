@@ -11,11 +11,12 @@ Stress classes: 0 (stress-free) 1 (stressed)
 
 Models:
 
-Independent:
+Independent-models:
+
   For Physiological Data: LSTM, SVM
 
   For Facial Expressions Data: VGG16, Basic CNN
 
-Multimodal-Fusion:
+Fusion-approach:
 - Both LSTM and VGG16 outputs are combined to provide as inputs to the fusion layer.
-- The physiological and facial data are combined to train the fusion model. Note that: LSTM and VGG16 are independently trained on physiological nad facial data respectively at first. Only their predictions/features are used for training fusion layer.
+- The physiological and facial data are combined to train the fusion layers. Note that: LSTM and VGG16 are independently trained on physiological and facial data respectively at first. Only their predictions/features are used for training fusion layer.
