@@ -34,3 +34,7 @@ Different models are used depending on the data modality. These models are train
 > Note: The fusion layer uses only the outputs from the pre-trained LSTM and VGG16 models; the original data is not directly fed to the fusion model.
 
 ### Paper Link: https://zenodo.org/records/19161171
+
+### Citation
+
+Subedi, B. (2026). Multimodal Stress Classification Using Physiological Signals and Facial Expressions with Machine and Deep Learning Models. Zenodo. https://doi.org/10.5281/zenodo.19161171
