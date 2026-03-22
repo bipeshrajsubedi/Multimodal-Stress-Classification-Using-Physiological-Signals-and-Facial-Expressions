@@ -31,4 +31,6 @@ Different models are used depending on the data modality. These models are train
   2. Extract predictions/features from both models.  
   3. Combine these outputs to train a **fusion layer**.  
 
-> Note: The fusion layer uses only the outputs from the pre-trained LSTM and VGG16 models; the original data is not directly fed to the fusion model.  
+> Note: The fusion layer uses only the outputs from the pre-trained LSTM and VGG16 models; the original data is not directly fed to the fusion model.
+
+### Paper Link: https://zenodo.org/records/19161171
